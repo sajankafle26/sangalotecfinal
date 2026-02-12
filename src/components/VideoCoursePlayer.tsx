@@ -271,7 +271,7 @@ const VideoCoursePlayer = ({ course, onBack }: { course: any, onBack: () => void
                                         >
                                             <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-xs ${ticket.status === 'Resolved' ? 'bg-green-500/10 text-green-400' : 'bg-orange-500/10 text-orange-400'
                                                 }`}>
-                                                <FaMessage />
+                                                <FaRegCommentDots />
                                             </div>
                                             <div className="flex-1">
                                                 <p className="text-white text-sm font-bold leading-tight mb-1 group-hover:text-indigo-400 transition-colors">{ticket.subject}</p>

@@ -6,7 +6,7 @@ import { auth } from "@/auth";
 export async function GET(req: Request) {
     try {
         const session = await auth();
-        if (!session) {
+        if (!session || !session.user) {
             return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
         }
 
